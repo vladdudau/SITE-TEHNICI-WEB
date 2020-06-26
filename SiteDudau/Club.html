@@ -11,7 +11,8 @@
  <script type="text/javascript" src="functii.js"></script>
  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
  <script src="traducere_pagina.js"></script>
- <script src="examen.js"></script>
+ <script src="nivel2task3.js"></script>
+ <script src="nivel2task4.js"></script>
 </head>
 <body class="Pagina2">
 	<div class="header">
@@ -44,6 +45,7 @@
   </div> 
   <a href="Imbunatatiri.html">Imbunatatiri</a>
   <a href="Quizz.html">Quiz</a>
+  <a href="Animatie.html">Animatie</a>
   <a href="http://localhost:3000/">Formular tombola</a>
   <a href="javascript:void(0);" style="font-size:19px;" class="icon" onclick="ApasareButon()">&#9776;</a>
   </div>
@@ -55,6 +57,27 @@
 		<label for="darkCheck"></label>
 	<script src="Dark.js"></script>
 	</div>
+	<br><br><br><br><br>
+	<div class="numaratoare">
+		<table class="countdownContainer">
+		  <tr class="info">
+			  <td colspan="4">Timp ramas pana la urmatorul meci</td>
+		  </tr>
+		  <tr class="info">
+			  <td id="zile">10</td>
+			  <td id="ore">10</td>
+			  <td id="minute">10</td>
+			  <td id="secunde">10</td>
+		  </tr>
+		  <tr>
+			  <td>Zile</td>
+			  <td>Ore</td>
+			  <td>Minute</td>
+			  <td>Secunde</td>
+		  </tr>
+	  </table>
+	  </div>
+	  <script src="nivel1task5.js"></script>
 	<article class="Stadium" id="Stadiumm">
 		<h2 id="Stad">Stadion</h2>
 		<script>
@@ -104,10 +127,14 @@ Rivalitatea a atras atenția<img src="madrid.jpg" id="madrid" alt="Atletico"> in
 	<h2>@Copyright Dudau Vlad-George</h2>
 	<br>
 	<h2 id="Ora"></h2>
+	<div class="timpPetrecut">
+		<p>Timp petrecut pe pagina</p>
+		<p id="timeSpent"></p>
+		</div>
 </div>
 	
 </body>
-<script>
+	<script>
 	Transforma();
 	Spatiere();
 	setColor();

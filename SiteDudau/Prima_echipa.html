@@ -11,6 +11,8 @@
  <script type="text/javascript" src="functii.js"></script>
  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
  <script src="traducere_pagina.js"></script>
+ <script src="nivel2task3.js"></script>
+ <script src="nivel2task4.js"></script>
 </head>
 <body class="Pagina3">
 	<div class="header">
@@ -42,6 +44,7 @@
     </div>
   </div> 
   <a href="Imbunatatiri.html">Imbunatatiri</a>
+  <a href="Animatie.html">Animatie</a>
   <a href="Quizz.html">Quiz</a>
   <a href="http://localhost:3000/">Formular tombola</a>
   <a href="javascript:void(0);" style="font-size:19px;" class="icon" onclick="ApasareButon()">&#9776;</a>
@@ -53,7 +56,12 @@
 		<label for="darkCheck"></label>
 		<script src="Dark.js"></script>
 	</div>
-	<br><br>
+  <br><br>
+  <div class="AfisAsc">
+  <button id="buton" class="asc">Ascunde imagini</button>
+  </div>
+  <script src="nivel1task8.js"></script>
+  <br><br><br>
 	<div class="Facebook">
 	<a href="https://www.facebook.com/RealMadrid/" id="Facebook">Dati click aici pentru a intra pe Facebook</a>
 	<br>
@@ -534,14 +542,15 @@
 	<div id="google_translate_element"> </div>
 	<h2>@Copyright Dudau Vlad-George</h2>
 	<br>
-	<h2 id="Ora"></h2>
+  <h2 id="Ora"></h2>
+  <div class="timpPetrecut">
+    <p>Timp petrecut pe pagina</p>
+    <p id="timeSpent"></p>
+  </div>
 </div>
 </body>
 <script>
-	setColor();
 	showSlides(slideIndex);
-	Transforma();
-	Spatiere();
 	Bifeaza()
 	</script>
 </html>

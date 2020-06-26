@@ -49,8 +49,7 @@ function FunctieReadMore2()
 }
 function Transforma()
 {
-  var x=document.getElementById("nume_pag");
-  console.log(x);
+  var x=document.getElementById("Stad");
   var l=x.innerHTML.length;
   
   var newText="";
@@ -74,7 +73,7 @@ function getColor()
   return colorString;
 }
 function Spatiere() {
-  document.getElementById("nume_pag").style.letterSpacing = "5px";
+  document.getElementById("Stad").style.letterSpacing = "5px";
 }
 function CreareButon()
 {
@@ -143,15 +142,15 @@ function ApasareButon()
     x.className = "navigation_bar";
 	}
 }
-var idVar = setInterval(() => {
-	timer()
-}, 1000);
-var myVar = setInterval(setColor, 3000);
-function timer() {
-	var dateVar = new Date();
-	var time = dateVar.toLocaleTimeString();
-	document.getElementById("Ora").innerHTML = time;
-};
+//var idVar = setInterval(() => {
+	//timer()
+//}, 1000);
+//var myVar = setInterval(setColor, 3000);
+//function timer() {
+	//var dateVar = new Date();
+	//var time = dateVar.toLocaleTimeString();
+	//document.getElementById("Ora").innerHTML = time;
+//};
 function Alerta() {
   setTimeout(function(){ alert("Ati apasat pe butonul care schimba intre light mode si dark mode si invers"); }, 3000);
 }
@@ -224,4 +223,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-

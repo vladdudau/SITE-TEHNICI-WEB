@@ -9,7 +9,9 @@
  <script type="text/javascript" src="functii.js"></script>
  <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
  <script src="traducere_pagina.js"></script>
- <script src="examen.js"></script>
+ <script src="nivel2task3.js"></script>
+ <script src="nivel2task4.js"></script>
+ <script src="nivel2task2.js"></script>
  <title>Real Madrid</title>
 </head>
 <body>
@@ -42,6 +44,7 @@
     </div>
   </div> 
   <a href="Imbunatatiri.html">Imbunatatiri</a>
+  <a href="Animatie.html">Animatie</a>
   <a href="Quizz.html">Quiz</a>
   <a href="http://localhost:3000/">Formular tombola</a>
   <a href="javascript:void(0);" style="font-size:19px;" class="icon" onclick="ApasareButon()">&#9776;</a>
@@ -54,8 +57,7 @@
     <h4 id="trofee">Poza cu trofeele Champions League:</h4>
     <img src="5.jpg" class="poza5" alt="Trofee">
 	<br><br>
-    <p><b>Liga Campionilor UEFA (UCL) (numită Cupa Campionilor Europeni până în 1992)</b> este o competiție fotbalistică europeană anuală inter-cluburi dedicată celor mai victorioase echipe din Europa. Ea reprezintă una dintre cele mai prestigioase trofee de cluburi în sport, alături de Copa Libertadores a Americii de Sud. Liga Campionilor nu trebuie confundată cu Europa League, al doilea cel mai important campionat pentru echipe de cluburi europene.
-Real Madrid este cel mai de succes club din istoria competiției, câștigând trofeul de treisprezece ori, inclusiv primele 5 ediții.</p>
+    <p id="sectiune1"></p>
     <br>
 	<h2 id="Legende">Legendele Clubului</h2>
 	<br><br>
@@ -82,8 +84,17 @@ Real Madrid este cel mai de succes club din istoria competiției, câștigând t
 		<label for="darkCheck"></label>
 	<script src="Dark.js"></script>
 	</div>
-	  <br>
-    <h2 class="stire">Ultimul meci:Real Madrid-Barcelona 2:0 </h2>
+	<br><br>
+	<div class="mesaje">
+		<p>Ravasul zilei este:</p>
+		<p id="ravase"></p>
+	</div>
+	<script src="nivel1task7.js"></script>
+	<br><br>
+	<h2 class="stire" id="sectiune2"></h2>
+	<script>
+		Aparitie();
+	</script>
 	<br>
     <img src="1.jpg" class="poza1" alt="Ultimul meci">
     <h5 class="descriere_poza">Vinicius marcand golul prin care Real Madrid a deschis scorul</h5>
@@ -135,15 +146,14 @@ mai ales că Sane este un jucător care se potrivește stilului madrilenilor.</p
 	<h2>@Copyright Dudau Vlad-George</h2>
 	<br>
 	<h2 id="Ora"></h2>
-	
+	<div class="timpPetrecut">
+	<p>Timp petrecut pe pagina</p>
+	<p id="timeSpent"></p>
+	</div>
 	</div>
 	
 </body>
 <script>
-	setColor();
 	CountDown();
-	Spatiere();
-	Transforma();
-	animateTitle();
 </script>
 </html>
